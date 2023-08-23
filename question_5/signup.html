@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Inter">
+    <title>Question 5 - Signup</title>
+</head>
+<body class="flex justify-center pt-20">
+    <div class="border-[1px] border-black w-[400px] h-fit rounded-2xl flex flex-col justify-center py-10 px-10">
+        <div class="flex justify-center mt-5">
+            <div class="bg-[url('images/bitnine_logo.jpg')] w-[100px] h-[54px] bg-contain bg-no-repeat"></div>
+        </div>
+        <div class="flex justify-center">
+            <h1 class="text-2xl mb-10 font-['Inter'] font-medium">Sign Up</h1>
+        </div>
+        <form  id="form" action="db.php" method="post">
+            <p class="text-sm mb-2 pl-1">Email</p>
+            <input type="email" name="email" class="w-full border-[1px] border-black rounded-lg text-sm mb-5 py-3 px-5 ring:border-transparent" title="Email" required>
+            <p class="text-sm mb-2 pl-1">Password</p>
+            <input type="password" id="password" name="password" class="w-full border-[1px] border-black rounded-lg text-sm mb-5 py-3 px-5 ring:border-transparent" title="Password" required>
+            <span id="password-check" class="text-black"></span>
+            <p class="text-sm mb-2 pl-1">Confirm Password</p>
+            <input type="password" id="confirm-password" name="confirmPassword" class="w-full border-[1px] border-black rounded-lg text-sm mb-5 py-3 px-5 ring:border-transparent" title="Confirm Password" required>
+            <span id="confirm-password-check" class="text-black"></span>
+            <div class="flex justify-center mt-5 mb-7">
+                <button type="submit" name="signup-btn"  class="flex rounded-lg py-2 px-6 bg-[#022ea9] text-white shadow-md">
+                    Sign up
+                </button>
+            </div>
+            <div class="flex justify-center">
+                <a href="/question_5/login.html" class="text-sm">Already have an account? <span class="underline">Login</span></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- <script>
+    const formElement = document.getElementById("form");
+    const passwordField = document.getElementById("password").value;
+    const cPasswordField = document.getElementById("confirm-password").value;
+    const passwordCheck = document.getElementById("password-check");
+    const cPasswordCheck = document.getElementById("confirm-password-check");
+
+
+    formElement.addEventListener("submit", function(event) {
+        event.preventDefault();
+        checkup();
+        
+        this.submit();
+    });
+    
+    function checkup() {
+        if(passwordField.length < 6) {
+            passwordCheck.innerHTML = "Password must be more than 6 characters.";
+        }else {
+            passwordCheck.innerHTML = "";
+        }
+    
+        if(cPasswordField != passwordField) {
+            passwordCheck.innerHTML = "Passwords do not match";
+            cPasswordCheck.innerHTML = "Passwords do not match";
+            this.sumbmit();
+        } else {
+            passwordCheck.innerHTML = "";
+            cPasswordCheck.innerHTML = "";
+        }
+    }
+
+    checkup();
+</script> -->

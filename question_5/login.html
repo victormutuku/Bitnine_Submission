@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Inter">
+    <title>Question 5 - Login</title>
+</head>
+<body class="flex justify-center pt-20">
+    <div class="border-[1px] border-black w-[400px] h-fit rounded-2xl flex flex-col justify-center py-10 px-10">
+        <div class="flex justify-center mt-5">
+            <div class="bg-[url('images/bitnine_logo.jpg')] w-[100px] h-[54px] bg-contain bg-no-repeat"></div>
+        </div>
+        <div class="flex justify-center">
+            <h1 class="text-2xl mb-14 font-['Inter'] font-medium">Login</h1>
+        </div>
+        <form action="db.php" method="post">
+            <p class="text-sm mb-2 pl-1">Email</p>
+            <input type="email" name="email" class="w-full border-[1px] border-black rounded-lg text-sm mb-5 py-3 px-5 ring:border-transparent" title="Email" required>
+            <p class="text-sm mb-2 pl-1">Password</p>
+            <input type="password" name="password" class="w-full border-[1px] border-black rounded-lg text-sm mb-5 py-3 px-5 ring:border-transparent" title="Password" required>
+            <div class="flex justify-center mt-5 mb-7">
+                <button type="submit" name="login-btn" class="flex rounded-lg py-2 px-6 bg-[#022ea9] text-white shadow-md">
+                    Login
+                </button>
+            </div>
+        </form>
+        <div class="flex justify-center">
+            <a href="/question_5/signup.html" class="text-sm">Don't have an account? <span class="underline">Signup</span></a>
+        </div>
+    </div>
+</body>
+</html>

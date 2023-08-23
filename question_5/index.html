@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Inter|Monda">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Question 5 - Index</title>
+</head>
+<body class="">
+    <div id="banner" class="hidden fixed w-full h-[45px] z-20 grid content-center bg-[url('https://bitnine.net/wp-content/uploads/2023/08/img-header-banner.png')]">
+        <div class="flex justify-center">
+            <a href="http://agcloud.bitnine.net/" target="_blank" class="text-white font-['Monda'] text-[18px]">AgensSQL로 보안 기능들을 강화시키세요.</a>
+        </div>
+    </div>
+    
+    <header id="nav-container" class="w-full h-[130px] bg-black fixed z-20">
+        <div class="w-full h-[40px]">
+            <div class="flex float-right">
+                <a href="https://bitnine.net/contact/" class="mr-5 mr-[9px] pt-[9px] text-white font-['Monda'] text-[15px]">
+                   <i class="fas fa-search text-white fa-lg"></i>
+                </a>
+                <a href="https://bitnine.net/contact/" class="ml-5 mr-[71px] pt-[9px] text-white font-['Monda'] text-[15px]">
+                   CONTACT
+                </a>
+                <a href="https://github.com/bitnine-oss/agensgraph" class="pt-[2px]">
+                    <div class="w-[36px] h-[36px] bg-contain bg-no-repeat p-[8px] hover:bg-white/50">
+                        <img src="images/github-mark.svg" alt="GitHub Logo">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/channel/UCBJNYamALEqrfxiOCgYyP2g/featured?view_as=subscriber" class="pt-[6px]">
+                    <div class="w-[36px] h-[36px] bg-contain bg-no-repeat p-[7px] hover:bg-white/50">
+                        <img src="images/youtube_logo.svg" alt="YouTube Logo">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/company/bitnineglobal/" class="pt-[2px]">
+                    <div class="w-[36px] h-[36px] bg-contain bg-no-repeat p-[7px] hover:bg-white/50">
+                        <img src="images/linkedin_logo.svg" alt="YouTube Logo">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/bitninesns/" class="pt-[3px]">
+                    <div class="w-[36px] h-[36px] bg-contain bg-no-repeat p-[8px] hover:bg-white/50">
+                        <img src="images/facebook_logo.svg" alt="YouTube Logo">
+                    </div>
+                </a>
+                <a href="https://blog.naver.com/bitnine9" class="mr-2 pt-[10px]">
+                    <div class="w-[36px] h-[36px] bg-contain bg-no-repeat hover:bg-white/50">
+                        <img src="images/medium_logo.png" alt="YouTube Logo">
+                    </div>
+                </a>
+            </div>
+            <div class="px-[25px]">
+                <div class="w-full flex">
+                    
+                    <a href="/" class="ml-[10px] mr-[102px]">
+                        <img src="https://bitnine.net/wp-content/uploads/2023/08/bitnine-logo_.png" width="235" height="61" alt="Bitnine Logo" scale="0">
+                    </a>
+                    <div class="flex ml-[75px]">
+                        <li class="h-[90px] list-none grid content-center">
+                            <a href="https://bitnine.net/agensgraph/" class="font-['Monda'] text-[#fac433] px-[12.5px]">PRODUCTS</a>
+                        </li>
+                        <li class="h-[90px] list-none grid content-center">
+                            <a href="https://bitnine.net/graph-database-use-case/" class="font-['Monda'] text-white hover:text-[#fac433] whitespace-nowrap duration-[300ms] px-[12.5px]">USE CASES</a>
+                        </li>
+                        <li class="h-[90px] list-none grid content-center">
+                            <a href="https://bitnine.net/services/" class="font-['Monda'] text-white hover:text-[#fac433] duration-[300ms] px-[12.5px]">SERVICES</a>
+                        </li>
+                        <li class="h-[90px] list-none grid content-center">
+                            <a href="https://bitnine.net/documentation/" class="font-['Monda'] text-white hover:text-[#fac433] duration-[300ms] px-[12.5px]">RESOURCES</a>
+                        </li>
+                        <li class="h-[90px] list-none grid content-center">
+                            <a href="https://bitnine.net/blog/" class="font-['Monda'] text-white hover:text-[#fac433] duration-[300ms] px-[12.5px]">BLOG</a>
+                        </li>
+                        <li class="h-[90px] list-none grid content-center">
+                            <a href="https://bitnine.net/company/" class="font-['Monda'] text-white hover:text-[#fac433] duration-[300ms] px-[12.5px]">COMPANY</a>
+                        </li>
+                        <li class="h-[90px] list-none grid content-center">
+                            <a href="https://bitnine.net/ir-announcement/" class="font-['Monda'] text-white hover:text-[#fac433] duration-[300ms] px-[12.5px]">IR</a>
+                        </li>
+                        <li class="h-[90px] list-none grid content-center">
+                            <a href="https://bitnine.net/agensgraph-downloads/" class="font-['Monda'] text-white hover:text-[#fac433] duration-[300ms] px-[12.5px]">
+                                <span class="bg-[#022EA9] px-[10px] py-[5.2px] rounded-[3.6px] whitespace-nowrap">
+                                    TRY FREE
+                                </span>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pt-[140px] px-[40px] flex flex-col justify-center">
+        <div class="py-[64px]">
+            <div class="mb-6 flex justify-center">
+                <img width="301" height="61" src="https://bitnine.net/wp-content/uploads/2022/04/AgenSQL-Logo.png" alt="AgenSQL Logo">
+            </div>
+            <p class=" font-['Monda'] text-[21px] text-center pt-4 mb-[10px]">
+                <strong>
+                    An integration of Bitnine's DB technology and PG expertise
+                </strong>
+            </p>
+            <div class="font-['Monda'] text-center text-[#666666]">
+                <p class="mb-6">
+                    AgensSQL is an all-new relational DBMS based on PostgreSQL, with years of expertise<br>
+                    and knowledge accumulated through database research and development.
+                </p>
+                <p class="mb-6">
+                    The enterprise package, along with AgensSQL engine, is an all-in-one solution that ensures<br>
+                    the efficiency and scalability of data management.
+                </p>
+                <p class="mb-6">
+                    Get AgensSQL now for stable operation and management services at a reduced<br>
+                    maintenance cost.
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center h-[114px]">
+            <div class="w-400px">
+                <div class="flex justify-between">
+                    <a href="https://bitnine.net/ko/contact/" class="font-['Monda'] text-white hover:text-[#fac433] duration-[300ms] px-[12.5px]">
+                        <span class="bg-[#022EA9] px-[10px] py-[5.2px] rounded-[3.6px] whitespace-nowrap">
+                            CONTACT
+                        </span>
+                    </a>
+                    <a href="https://bitnine.net/agenssql_brochure_ko/" class="font-['Monda'] text-white hover:text-[#fac433] duration-[300ms] px-[12.5px]">
+                        <span class="bg-[#022EA9] px-[10px] py-[5.2px] rounded-[3.6px] whitespace-nowrap">
+                            BROCHURE
+                        </span>
+                    </a>
+                    <a href="https://blog.naver.com/bitnineglobal/222785715055" class="font-['Monda'] text-white hover:text-[#fac433] duration-[300ms] px-[12.5px]">
+                        <span class="bg-[#022EA9] px-[10px] py-[5.2px] rounded-[3.6px] whitespace-nowrap">
+                            BLOG
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full flex justify-center py-[80px] px-[40px] bg-[#f3f6fb]">
+        <img width="900" height="752" src="https://bitnine.net/wp-content/uploads/2022/04/img_diagram_eng-e1651143428347.png" alt="Agens Explanation Diagram">
+    </section>
+ 
+    <section class="py-[80px] px-[40px]">
+        <div class="w-full flex flex-col justify-center font-['Monda'] text-center">
+            <strong class="mb-[10px] text-[34px]">Key Features</strong>
+            <p class="mb-[10px]">
+                Manage your data with Agens Enterprise Package<br>
+                Essential enterprise features such as high availability and sharding are provided
+            </p>
+        </div>
+    
+        <div class="flex justify-center mx-[25px] pt-[30px]">
+            <div class="px-[25px]">
+                <img width="4584" height="1801" src="https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng.png" alt="Key Features">
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full flex flex-col justify-center py-[80px] px-[40px] bg-[#f3f6fb]">
+        <div class="w-full flex flex-col justify-center font-['Monda'] text-center">
+            <strong class="mb-[20px] text-[34px]">AgensSQL DB Engine</strong>
+            <strong class="mb-[35px] underline text-[#444444]">Enhanced Data Security</strong>
+            <p class="mb-[10px] text-[#666666]">
+                AgensSQL is a PostgreSQL-based DBMS<br>
+                that guarantees optimal security and stability.
+            </p>
+        </div>
+        <div class="mx-[10px] pt-[30px] flex justify-center">
+            <div class="p-[10px]" style="top: -25%; bottom: -25%; -webkit-transform-origin: 90% 66%; transform-origin: 90% 66%;">
+                <div class="bg-[#fcfcfc]">
+                    <div class="border-[1px] border-[#d1d1d1] rounded-[10px] p-[10%] transition-all duration-[1000ms] ease shadow-[1px_1px_3px_2px_#e5e5e5] hover:shadow-[1px_1px_20px_2px_rgba(0,39,119,0.25)]">
+                        <img src="https://bitnine.net/wp-content/uploads/2022/04/Password-Profile.png" width="1209" height="859" alt="Password Profile Image">
+                    </div>
+                </div>
+            </div>
+            <div class="p-[10px]" style="top: -25%; bottom: -25%; -webkit-transform-origin: 90% 66%; transform-origin: 90% 66%;">
+                <div class="bg-[#fcfcfc]">
+                    <div class="border-[1px] border-[#d1d1d1] rounded-[10px] p-[10%] transition-all duration-[1000ms] ease shadow-[1px_1px_3px_2px_#e5e5e5] hover:shadow-[1px_1px_20px_2px_rgba(0,39,119,0.25)]">
+                        <img src="https://bitnine.net/wp-content/uploads/2022/04/Data-Redaction.png" width="1209" height="859" alt="Data Redaction Image">
+                    </div>
+                </div>
+            </div>
+            <div class="p-[10px]" style="top: -25%; bottom: -25%; -webkit-transform-origin: 90% 66%; transform-origin: 90% 66%;">
+                <div class="bg-[#fcfcfc]">
+                    <div class="border-[1px] border-[#d1d1d1] rounded-[10px] p-[10%] transition-all duration-[1000ms] ease shadow-[1px_1px_3px_2px_#e5e5e5] hover:shadow-[1px_1px_20px_2px_rgba(0,39,119,0.25)]">
+                        <img src="https://bitnine.net/wp-content/uploads/2022/04/Auditing.png" width="1209" height="860" alt="Auditing Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full flex flex-col justify-center py-[80px] px-[65px]">
+        <div class="w-full flex flex-col justify-center font-['Monda'] text-center">
+            <strong class="mb-[20px] text-[34px]">Agens Enterprise Package</strong>
+            <p class="mb-[20px] text-[#666666]">
+                Agens Enterprise Package comes with a high availability management server that<br>
+                supports backup and data monitoring dashboard that helps enterprise customers manage their data efficiently.
+            </p>
+            <div class="grid grid-cols-2 place-content-center text-[20px] text-[#444444]">
+                <div class="px-[25px]">
+                    <p class="mb-[20px]">
+                        <strong>Agens HA Manager</strong>
+                    </p>
+                    <p class="mb-[20px]">
+                        <strong class="text-[#0082cb]">HA Clustering</strong> - Failover/Failback, Load-balancing
+                    </p>
+                    <div class="mb-[24px]">
+                        <img width="1024" height="922" src="https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png"  alt="Agens HA Manager Diagram">
+                    </div>
+                    <p class="mb-[20px]">Replication</p>
+                </div>
+                <div class="px-[25px]">
+                    <p class="text-[20px] text-[#444444] mb-[20px]">
+                        <strong>Agens HA Manager</strong>
+                    </p>
+                    <div class="card-container relative">
+                        <div class="card-outer mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] rounded-[8px] grid content-center transition-all duration-[700ms] hover:transform-[rotateY(-180deg)]">
+                            <p class="text-[#0081cb] text-[16px]">Backup/Restore</p>
+                        </div>
+                        <div class="card-inner absolute top-0 mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] bg-[#0081cb] rounded-[8px] grid content-center px-[24px] transition-all duration-[700ms] hover:transform-[rotateY(-180deg)]">
+                            <ul class="text-start text-white text-[16px]">
+                                <li class="list-disc">provides a convenient interface for backup & restore</li>
+                                <li class="list-disc">provides backup & restore features for DB and table objects</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-container relative">
+                        <div class="card-outer mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] rounded-[8px] grid content-center transition-all duration-[700ms] ">
+                            <p class="text-[#0081cb] text-[16px]">DB Monitoring Dashboard</p>
+                        </div>
+                        <div class="card-inner absolute top-0 mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] bg-[#0081cb] rounded-[8px] grid content-center px-[24px] transition-all duration-[700ms] ">
+                            <ul class="text-start text-white text-[16px]">
+                                <li class="list-disc">monitors real-time session & transaction lock</li>
+                                <li class="list-disc">provides status for server CPU & memory</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-container relative">
+                        <div class="card-outer mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] rounded-[8px] grid content-center transition-all duration-[700ms] ">
+                            <p class="text-[#0081cb] text-[16px]">Schedule Management</p>
+                        </div>
+                        <div class="card-inner absolute top-0  mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] bg-[#0081cb] rounded-[8px] grid content-center px-[24px] transition-all duration-[700ms] ">
+                            <ul class="text-start text-white text-[16px]">
+                                <li class="list-disc">provides memory for script, SQL job, and scheduling management</li>
+                                <li class="list-disc">provides UX dedicated to scheduling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-container relative">
+                        <div class="card-outer mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] rounded-[8px] grid content-center transition-all duration-[700ms] ">
+                            <p class="text-[#0081cb] text-[16px]">Database Audit</p>
+                        </div>
+                        <div class="card-inner absolute top-0 mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] bg-[#0081cb] rounded-[8px] grid content-center px-[24px] transition-all duration-[700ms] ">
+                            <ul class="text-start text-white text-[16px]">
+                                <li class="list-disc">enables auditing via user interface</li>
+                                <li class="list-disc">view audit results via user interface</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-container relative">
+                        <div class="card-outer mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] rounded-[8px] grid content-center transition-all duration-[700ms] ">
+                            <p class="text-[#0081cb] text-[16px]">SQL Monitoring</p>
+                        </div>
+                        <div class="card-inner absolute top-0  mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] bg-[#0081cb] rounded-[8px] grid content-center px-[24px] transition-all duration-[700ms] ">
+                            <ul class="text-start text-white text-[16px]">
+                                <li class="list-disc">collects query statistics required for performance analysis</li>
+                                <li class="list-disc">extracts monitoring results in query</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-container relative">
+                        <div class="card-outer mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] rounded-[8px] grid content-center transition-all duration-[700ms] ">
+                            <p class="text-[#0081cb] text-[16px]">Performance Management</p>
+                        </div>
+                        <div class="card-inner absolute top-0 mb-[12px] w-full h-[90px] min-h-[80px] border-2 border-[#0081cb] bg-[#0081cb] rounded-[8px] grid content-center px-[24px] transition-all duration-[700ms] ">
+                            <ul class="text-start text-white text-[16px]">
+                                <li class="list-disc">monitors and collects operation status & statistical data</li>
+                                <li class="list-disc">provides status reports required for improving performance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1e2329] text-white font-['Monda'] h-fit">
+        <div class="w-full h-fit py-[64px] px-[40px]">
+            <div class="mx-[42.3px]">
+                <table class="w-full">
+                    <tbody>
+                        <tr class="w-full text-[14.4px]">
+                            <th class="w-[16%] text-start">PRODUCTS</th>
+                            <th class="w-[16%] text-start">
+                                <a href="https://bitnine.net/graph-database-use-case/" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    USE CASES
+                                </a>
+                            </th>
+                            <th class="w-[16%] text-start">
+                                <a href="https://bitnine.net/services" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    SERVICES
+                                </a>
+                            </th>
+                            <th class="w-[16%] text-start">RESOURCES</th>
+                            <th class="w-[16%] text-start">
+                                <a href="https://bitnine.net/blog/" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    BLOG
+                                </a>
+                            </th>
+                            <th class="w-[16%] text-start">COMPANY</th>
+                        </tr>
+                        <tr class="w-full text-[14.4px]">
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]">
+                                <a href="https://bitnine.net/agenssql/" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    Relational Database
+                                </a>
+                            </td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]">
+                                <a href="https://bitnine.net/documentation/" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    Documentation
+                                </a>
+                            </td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]">
+                                <a href="https://bitnine.net/company/" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    About Us
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="w-full text-[14.4px]">
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]">
+                                <a href="https://bitnine.net/graph-database/" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    Graph Database
+                                </a>
+                            </td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]">
+                                <a href="https://bitnine.net/learn" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    Learn
+                                </a>
+                            </td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]">
+                                <a href="https://bitnine.net/contact/" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    Contact
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="w-full text-[14.4px]">
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]">
+                                <a href="https://bitnine.net/graph-database-2/" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                                    Graph-based Solution
+                                </a>
+                            </td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                            <td class="w-[16%] pt-[8.64px] pr-[14.4px]"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="w-full py-[32px] px-[40px]">
+            <div class="h-[26.5px]">
+                <div class="mx-[42.3px] font-['Monda'] text-[14.4px] text-[#ababab]">
+                    <div class="float-left">
+                        <p>© 2023 by Bitnine Gobal Inc. All Rights Reserved.</p>
+                    </div>
+                    <div class="flex float-right">
+                        <div class="flex float-right">
+                            <a href="https://github.com/bitnine-oss/agensgraph" class="">
+                                <div class="w-[32.5px] h-[32.5px] bg-contain bg-no-repeat p-[8px] hover:bg-white/50">
+                                    <img src="images/github-mark.svg" alt="GitHub Logo">
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCBJNYamALEqrfxiOCgYyP2g/featured?view_as=subscriber" class="pt-[2px]">
+                                <div class="w-[32.5px] h-[32.5px] bg-contain bg-no-repeat p-[7px] hover:bg-white/50">
+                                    <img src="images/youtube_logo.svg" alt="YouTube Logo">
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/company/bitnineglobal/" class="-mt-[3px]">
+                                <div class="w-[32.5px] h-[32.5px] bg-contain bg-no-repeat p-[7px] hover:bg-white/50">
+                                    <img src="images/linkedin_logo.svg" alt="YouTube Logo">
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/bitninesns/" class="-mt-[3px]">
+                                <div class="w-[32.5px] h-[32.5px] bg-contain bg-no-repeat p-[8px] hover:bg-white/50">
+                                    <img src="images/facebook_logo.svg" alt="YouTube Logo">
+                                </div>
+                            </a>
+                            <a href="https://blog.naver.com/bitnine9" class="mr-2 mt-[1px]">
+                                <div class="w-[32.5px] h-[32.5px] bg-contain bg-no-repeat hover:bg-white/50">
+                                    <img src="images/medium_logo.png" alt="YouTube Logo">
+                                </div>
+                            </a>
+                        </div>
+                        <a href="https://bitnine.net/contact/" class="transition[color] duration-[300ms] hover:text-[#2d6fad] hover:font-[900]">
+                            CONTACT
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<style>
+
+.card-container:hover {
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    transform: rotateY(-180deg);
+}
+
+.card-outer, .card-inner {
+    backface-visibility: hidden;
+}
+
+.card-inner {
+    transform: rotateY(-180deg);
+}
+
+/* .card-container{
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    z-index: -1;
+} */
+
+/* .card-container:hover{
+    transform: rotateY(-180deg);
+} */
+
+/* .card-outer,.card-inner{
+    backface-visibility: hidden;
+}
+.card-inner{
+    transform: rotateY(180deg);
+} */
+/* .card-outer:hover{
+    transform: rotateY(-180deg);
+} */
+/* .card-inner:hover{
+    transform: rotateY(0deg);
+    visibility: visible;
+} */
+</style>
+<script>
+    const banner = document.getElementById("banner");
+    const navContainer = document.getElementById("nav-container");
+
+    window.addEventListener("scroll", function() {
+
+        if(window.scrollY > 40) {
+            banner.classList.remove("hidden");
+            navContainer.classList.add("top-[45px]");
+        } else {
+            banner.classList.add("hidden");
+            navContainer.classList.remove("top-[45px]");
+        }
+    });
+
+</script>
+</html>
